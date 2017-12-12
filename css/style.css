@@ -1,0 +1,293 @@
+nav ul{
+  text-align: center;
+  margin: 0;
+  background-color: #bd9391;
+}
+nav li {
+  display: inline;
+}
+nav a {
+  display:inline-block;
+  color: #f5b700;
+  background-color: #bd9391;
+  font-size: 20px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  padding: 22px 25px;
+  text-decoration: none;
+  font-weight: 600;
+}
+#about {
+  display: flex;
+}
+#portrait {
+  width: 50%;
+  position: relative;
+}
+#portrait_image {
+  background-size: cover;
+  background-image: url("../img/zoe.jpg");
+  background-position: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+#beschreibung {
+  width: 50%;
+  background: #efefef;
+}
+#name {
+  min-height: 300px;
+  margin: 5%;
+  color: #A2A79E;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+#adresse {
+  color: #ffffff;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  min-height: 200px;
+  padding:10%;
+  background-color: #D2D2D2;
+  padding: 60px 25px;
+}
+
+body {
+  font-size: 18px;
+  font-family: “"Trebuchet MS", Helvetica”, sans-serif;
+  line-height: 21px;
+  color: #222222;
+  text-decoration: none;
+}
+a {
+  color: #222222;
+  text-decoration: none;
+}
+
+#beschreibung h1 {
+color: #222222;
+line-height: 100%;
+text-transform: uppercase;
+}
+#beschreibung span {
+  color: #222222;
+  font-size: 14px;
+  text-transform:none;
+}
+
+main {
+  width: 100%;
+}
+/* Skills Section */
+#wrapper {
+  color: #f5b700;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  max-width: 1170px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 5%;
+}
+
+#wrapper h1 {
+  text-align: center;
+  line-height: 1em;
+  font-size: 3em;
+}
+
+
+#skills_image {
+    background: url("../img/skills.png") no-repeat;
+        height: 450px;
+        /* width: 100px; */
+        background-size: contain;
+        background-position: center;
+        margin: 15px auto;
+}
+/* CV */
+
+#cv, #jobs, #ausbildungen {
+float: left;
+}
+
+.cv-eintrag {
+width: 100%;
+float: left;
+}
+
+.cv-eintrag img {
+vertical-align: middle;
+margin-right: 15px;
+}
+
+.links p {
+display: inline-block;
+padding: 15px;
+border: 1px solid #efefef;
+}
+
+.links {
+float: left;
+}
+
+.rechts {
+width: 80%;
+vertical-align: top;
+float: right;
+}
+
+.cv-titel {
+font-size: 1.2em;
+line-height: 3em;
+font-weight: bold;
+}
+
+.cv-beschreibung {
+border: 1px solid #efefef;
+padding: 0 15px 15px 15px;
+}
+/* Thumbs */
+
+#portfolio {
+	float: left;
+}
+
+.portfolio-kacheln {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.portfolio-eintrag {
+	position: relative;
+	width: 33.3333%;
+}
+
+.portfolio-eintrag img {
+	width: 100%;
+	display: block;
+}
+
+.portfolio-eintrag .arbeit-titel {
+	background: rgba(46, 46, 46, 0.75);
+	height: 100%;
+	color: white;
+	padding: 45% 0;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	z-index: 2;
+	left: 0;
+	top: 0;
+	box-sizing: border-box;
+	visibility: hidden;
+}
+
+.portfolio-eintrag:hover .arbeit-titel {
+	visibility: visible;
+}
+/*Detailseite*/
+img.img-links {
+  width: 48%;
+  float: left;
+  margin: 0 4% 4% 0;
+}
+img.img-rechts {
+  width: 48%;
+  margin: 0 0 4% 0;
+}
+.back {
+  width: 100%;
+  text-align:center;
+  height: 4em;
+}
+nav a:hover {
+  color: #222222;
+  cursor: pointer;
+}
+/* Kontaktformular */
+#formular {
+  clear: both;
+}
+#titelformular {
+  padding: 1em 0 0 0;
+}
+.kontaktformular {
+  width: 70%;
+  margin: 0 auto;
+}
+.form-control, textarea {
+  padding: 2%;
+  width: 92%;
+  margin: 2%;
+}
+.absenden {
+  padding: 2%;
+  width: 96%;
+  margin: 2%;
+  background: #f5b700;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+.absenden:hover {
+  background: #C99600;
+}
+/*footer*/
+footer {
+  background: #D2D2D2;
+  color: white;
+  padding: 2% 0;
+  margin: 2% 0 0 0;
+  text-align: center;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+/* Mediaqueries bis 960px */
+@media only screen and (max-width: 960px){
+  #about{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  #beschreibung {
+    width: 100%;
+  }
+  #portrait {
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 */
+  }
+  section#cv {
+    padding :0 5%;
+  }
+  .links {
+    width: 100%;
+    text-align: center;
+  }
+  .rechts {
+    width: 100%;
+  }
+    #skills_image{
+      height: 380px;
+    }
+}
+/* Mediaqueries unter 480Pixel - z.B. Handy im Hochformat */
+@media only screen and (max-width: 480px){
+  #skills_image{
+    height: 280px;
+  }
+  nav li {
+    display: block;
+    line-height: 0.1em;
+  }
+  ul {
+    padding 0;
+  }
+  nav {
+    position: relative;
+    width: 100%;
+  }
+  main {
+    padding: 0;
+  }
+  .portfolio-eintrag {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+}
